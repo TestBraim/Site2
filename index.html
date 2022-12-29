@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brayan Pletsch | Portfolio</title>
+    
+    <link rel="shortcut icon" type="image/jpg" href="elements/favicon.ico"/>
+
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/main.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bitter:wght@400;700&family=Space+Mono:wght@400;700&display=swap"
+        rel="stylesheet">
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+</head>
+
+<body>
+    <header id="header">
+        <h1 id="header-name">Brayan Pletsch</h1>
+        <ul class="header-list">
+            <li class="header-list-lis">
+                <a href="#about-me-section" class="header-list-a link">sobre</a>
+            </li>
+
+            <li class="header-list-lis">
+                <a href="#projects-section" class="header-list-a link">projetos</a>
+            </li>
+
+            <li class="header-list-lis">
+                <a href="#contact-section" class="header-list-a link">contato</a>
+            </li>
+        </ul>
+    </header>
+
+    <main id="main">
+        <section id="main-section">
+            <div id="main-div">
+                <h1 id="main-header">Quer construir algo <span class="main-span">grande e inspirador?</span></h1>
+                <p id="main-text">Então, você está no lugar certo.</p>
+            </div>
+
+            <div id="main-button-group">
+
+                <a href="#about-me-section" class="button links">sobre mim</a>
+                <a href="#projects-section" class="button links">ver meus projetos</a>
+            </div>
+        </section>
+
+        <section id="about-me-section">
+            <div class="about-me-divs" data-depth="0.2" id="about-me-section-div-1">
+                <img src="elements/clumsy 1.svg" alt="image of a man floating" class="about-me-image" data-depth="0.2">
+                <div class="about-me-texts">
+                    <h1 class="about-me-header">Início</h1>
+                    <p class="about-me-text">Eu me chamo Brayan, tenho 16 anos, e comecei a programar desde que eu
+                        tinha 13 anos de idade.</p>
+                </div>
+            </div>
+
+            <div class="about-me-divs" data-depth="0.3" id="about-me-section-div-2">
+                <img src="elements/jumping 1.svg" alt="image of a man floating" class="about-me-image" data-depth="0.2">
+                <div class="about-me-texts">
+                    <h1 class="about-me-header">Carreira</h1>
+                    <p class="about-me-text">Atualmente estou cursando o ensino médio, porém a escola nunca foi um
+                        motivo para deixar de me aprofundar nos estudos afora.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects-section">
+            <div class="projects-section-card">
+                <a href="https://codepen.io/brayan" target="_blank"
+                    class="image-in-a projects-section-image-unfocus"></a>
+                <h1 class="projects-section-header">Documentação técnica</h1>
+                <p class="projects-section-text">Feito como projeto para a certificação da freeCodeCamp</p>
+
+            </div>
+
+            <div class="projects-section-card">
+                <a href="https://codepen.io/brayan" target="_blank"
+                    class="image-in-a projects-section-image-focus"></a>
+                <h1 class="projects-section-header">Formulário</h1>
+                <p class="projects-section-text">Feito no intúito de receber feedbacks de usuários de uma plataforma de
+                    ensino</p>
+
+            </div>
+
+            <div class="projects-section-card">
+                <a href="https://codepen.io/brayan" target="_blank"
+                    class="image-in-a projects-section-image-unfocus" id="projects-section-image-3"></a>
+                <h1 class="projects-section-header">Página de produto</h1>
+                <p class="projects-section-text">Página para a divulgação de um produto retrô</p>
+            </div>
+
+
+        </section>
+
+    </main>
+
+    <footer id="contact-section">
+        <div id="contact-text-div">
+            <h1 id="contact-h1">Quer me contratar?</h1>
+            <p id="contact-p">Me contate em qualquer uma dessas opções!</p>
+        </div>
+
+        <div id="contact-links-div">
+            <ul id="contact-list">
+                <li class="contact-list-lis">
+                    <a href="https://github.com/BigBraim" target="_blank" class="contact-a link">github</a>
+                </li>
+                <li class="contact-list-lis">
+                    <a href="mailto:brayan.pletsch@gmail.com" target="_blank" class="contact-a link">email</a>
+                </li>
+                <li class="contact-list-lis">
+                    <a href="https://contate.me/brayanpletsch" target="_blank"
+                        class="contact-a link">whatsapp</a>
+                </li>
+            </ul>
+        </div>
+
+    </footer>
+
+    <script>
+        ScrollReveal().reveal('#about-me-section-div-1', { delay: 100 });
+        ScrollReveal().reveal('#about-me-section-div-2', { delay: 300 });
+    </script>
+
+    <script type="module" src="https://unpkg.com/rough-notation?module"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+    <script>
+        var scene = document.getElementById('about-me-section');
+        var parallaxInstance = new Parallax(scene);
+    </script>
+    <script src="index.js" type="module"></script>
+
+
+
+    <script type="module" src="https://unpkg.com/rough-notation@0.5.1/lib/rough-notation.esm.js?module">
+    </script>
+    <script type="module">
+        import { annotate, annotationGroup } from 'rough-notation';
+
+        const e = document.querySelector('.main-span');
+        const annotation = annotate(e, { type: 'highlight', strokeWidth: 10, color: '#DADADA', animationDuration: 1500 });
+        annotation.show();
+
+        window.onbeforeunload = function () {
+            window.scrollTo(0, 0);
+        }
+    </script>
+</body>
+
+</html>
